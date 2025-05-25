@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Treasures</title>
+    <!-- Code for CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+     <link rel="icon" type="image/icon" href="Image/favicon.PNG">
+</head>
+<body>
+    <!-- Header Section -->
+     <Header class="Header">
+        
+<a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i>Little Treasures</a>
+   
+    
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#products">Products</a>
+    <a href="#categories">Categories</a>
+    <a href="#review">Review</a>
+    <a href="#blogs">Blogs</a>
+     <a href="admin-login.html">Admin Login</a> 
+</nav>
+
+<!-- Icons -->
+ <div class="Icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+     <div class="fa fa-search" id="search-btn"></div>
+      <div class="fa fa-shopping-cart" id="cart-btn"></div>
+       <div class="fa fa-user" id="login-btn"></div>
+     
+ </div>
+<!-- search form -->
+ <form class="search-form">
+    <input type="search" id="search-box" placeholder="Search Here....">
+    <label for="search-box" class="fa fa-search"></label>
+ </form>
+
+
+ 
+<!-- Cart Section -->
+ <div class="shopping-cart">
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="Image/img1.avif" alt="">
+        <div class="content">
+            <h3>Teddy Bear</h3>
+            <span class="Price"> ₹ 400.0</span>
+            <span class="quantity"> Qty : 2 </span>
+        </div>
+    </div>
+
+     <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="Image/img2.jpg" alt="">
+        <div class="content">
+            <h3>Teddy Bear</h3>
+            <span class="Price"> ₹ 500.0</span>
+            <span class="quantity"> Qty : 2 </span>
+        </div>
+    </div>
+
+     <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="Image/img3.png!bw700" alt="">
+        <div class="content">
+            <h3>Teddy Bear</h3>
+            <span class="Price"> ₹ 600.0</span>
+            <span class="quantity"> Qty : 2 </span>
+        </div>
+    </div>
+
+    <div class="total"> Total : ₹1500.00</div>
+    <a href="#" class="btn">Checkout </a>
+ </div>
+
+<!-- Login Page -->
+ <form action="#" class="login-form">
+    <h3>Login Now</h3>
+    <input type="email" placeholder="Enter Your Email" class="box">
+     <input type="password" placeholder="Enter Your password" class="box">
+
+     <p>Forgot Your Password <a href="#"> Click Here </a></p>
+     <p>Don't Have An Account  <a href="#"> Create Now </a></p>
+
+     <input type="submit" value="Login Now" class="btn">
+
+ </form>
+
+     </Header>
+ <!-- Header Section End-->
+  <!-- Home Section Start -->
+   <Section class="home" id="home">
+<div class="content">
+    <h3>"Welcome to <span>Little Treasures</span> – Where Every Toy is a Gem!</h3>
+    <p>At Little Treasures, we believe that every child deserves a world full of wonder, creativity, and joy. That’s why we’ve handpicked a collection of toys that do more than just entertain – they inspire imagination, spark learning, and create lasting memories.</p>
+
+    <a href="#" class="btn">Shop Now</a>
+</div>
+   </Section>
+<!-- Home Section end -->
+
+   <!-- Features Section Start -->
+<section class="features" id="features">
+<h1 class="heading"> Our <span>Features</span> </h1>
+
+<div class="box-container">
+    <div class="box">
+        <img src="Image/f1.png" alt="">
+        <h3>Discover Joy in Every Toy!You Buy !</h3>
+        <p>Explore a world of fun, learning, and imagination with toys that bring smiles to every child. Safe, high-quality, and made for joyful moments.</p>
+
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+     <div class="box">
+        <img src="Image/feature-img-2.png" alt="">
+        <h3>Superfast Delivery, Right to Your Door!</h3>
+        <p>Get your favorite toys quickly and hassle-free with our lightning-fast, reliable shipping.
+We make sure the fun never has to wait!</p>
+
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+     <div class="box">
+        <img src="Image/feature-img-3.png" alt="">
+        <h3>Easy & Secure Payments, Every Time!</h3>
+        <p>Shop with confidence using fast, safe, and hassle-free payment options.
+Your convenience and security are our top priorities..</p>
+
+        <a href="#" class="btn">Read More</a>
+    </div>
+</div>
+
+</section>
+<!-- Features Section  End -->
+
+<!-- Product section Start -->
+
+
+<section class="products" id="products">
+    <h1 class="heading"> Our <span>Products</span></h1>
+
+    <div class="swiper product-slider"> 
+        <div class="swiper-wrapper">
+          
+ <div class="swiper-slide box">
+                <img src="Image/pp2.png" alt="">
+                <h1>Toy House</h1>
+
+                <div class="price"> ₹250/- - ₹500/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+               <a href="#" class="btn add-to-cart" 
+   data-name="Toy House" 
+   data-price="250" 
+   data-img="Image/pp2.png">Add To Cart</a>
+            </div>
+
+             <div class="swiper-slide box">
+                <img src="Image/pp3.png" alt="">
+                <h1>Toy Train</h1>
+
+                <div class="price"> ₹200/- - ₹450/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+               <a href="#" class="btn add-to-cart" 
+   data-name="Toy Train" 
+   data-price="200" 
+   data-img="Image/pp3.png">Add To Cart</a>
+            </div>
+
+             <div class="swiper-slide box">
+                <img src="Image/pp4-removebg-preview.png" alt="">
+                <h1>Toy Train</h1>
+
+                <div class="price"> ₹200/- - ₹450/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="" class="btn">Add To Cart</a>
+            </div>
+
+
+        </div>
+
+    </div> 
+
+     <div class="swiper product-slider"> 
+        <div class="swiper-wrapper">
+          
+
+            
+ <div class="swiper-slide box">
+                <img src="Image/pp2.png" alt="">
+                <h1>Toy House</h1>
+
+                <div class="price"> ₹250/- - ₹500/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="" class="btn">Add To Cart</a>
+            </div>
+
+             <div class="swiper-slide box">
+                <img src="Image/pp3.png" alt="">
+                <h1>Toy Train</h1>
+
+                <div class="price"> ₹200/- - ₹450/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="" class="btn">Add To Cart</a>
+            </div>
+
+             <div class="swiper-slide box">
+                <img src="Image/pp4-removebg-preview.png" alt="">
+                <h1>Toy Train</h1>
+
+                <div class="price"> ₹200/- - ₹450/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="" class="btn">Add To Cart</a>
+            </div>
+
+
+        </div>
+
+     </div> 
+</section>
+
+
+ <!-- Product section end -->
+  
+ <!-- Product catagory start-->
+  <section class="categories" id="categories">
+    <h1 class="heading"> Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="Image/cat-1.jpeg" alt="">
+            <h3>Educational Toys</h3>
+            <p>Upto 45% Off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Image/cat-2.jpg" alt="">
+            <h3>Action Figures & Collectibles</h3>
+            <p>Upto 45% Off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Image/cat-3.jpg" alt="">
+            <h3>Outdoor & Sports Toys</h3>
+            <p>Upto 45% Off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Image/cat-4.jpg" alt="">
+            <h3>Dolls & Plush Toys</h3>
+            <p>Upto 45% Off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </div>
+  </section>
+<!-- Product catagory END-->
+
+<!-- Review Section Start -->
+<section class="review" id="review">
+<h1 class="heading"> Customer's <span>Review</span></h1>
+<div class="swiper review-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+            <img src="Image/c1.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur iusto deleniti enim consequuntur totam itaque nostrum dolorum repudiandae molestias.</p>
+            <h3>Surjeet Singh</h3>
+            <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="Image/c2.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur iusto deleniti enim consequuntur totam itaque nostrum dolorum repudiandae molestias.</p>
+            <h3>Surjeet Singh</h3>
+            <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="Image/c3.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur iusto deleniti enim consequuntur totam itaque nostrum dolorum repudiandae molestias.</p>
+            <h3>Surjeet Singh</h3>
+            <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="Image/c4.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur iusto deleniti enim consequuntur totam itaque nostrum dolorum repudiandae molestias.</p>
+            <h3>Surjeet Singh</h3>
+            <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+ <!-- Review Section End -->
+
+ <!-- Blog Section Start -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"> Our <span>Blogs</span></h1>
+<div class="box-container">
+    <div class="box">
+        <img src="https://i.postimg.cc/3Rr3tMYQ/pakistan-india-cyberattack.png" alt="">
+        <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fa fa-user"> By Surjeet </i></a>
+                <a href="#"> <i class="fa fa-calendar"> 25-May-2025 </i></a>
+            </div>
+            <h3>India vs Pakistan 2025: How Technology Escalated the Conflict into a Cyber War</h3>
+            <p>This blog explores how the most recent flare-up between India and Pakistan triggered a wave of cyberattacks, AI-driven propaganda, and digital surveillance—marking a new chapter in modern geopolitical conflict.</p>
+            <a href="https://techgadgetnestsr.blogspot.com/2025/05/india-vs-pakistan-2025-how-technology.html" class="btn" target="_blank"> Read More </a>
+        </div>
+    </div>
+
+      <div class="box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbOPFtEf313SNsqqtSqpNjg78AcB-JzMeDWUxYcDS_KrtIHoDykKVl7Zwbd6ParVqdR0vepOHhbuM2WmFhECGwSBVxCHrLhWk5DjfgHtJgwMonnE-wK1syl75bLQT_Mc7jIna10Ycu203N6F44Hld9FISQh-bcn93TbTZI7h_JwrdnH_jqSt2xflokULM/w640-h426/ChatGPT%20Image%20May%201,%202025,%2010_49_53%20AM.png" alt="">
+        <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fa fa-user"> By Surjeet </i></a>
+                <a href="#"> <i class="fa fa-calendar"> 25-May-2025 </i></a>
+            </div>
+            <h3>How to Start a Tech Startup as a Non-Technical Founder 2025</h3>
+            <p>You don’t need to write code to build a tech company. As a non-technical founder, your greatest strength is your ability to understand customers, solve real problems, and hustle. Here's how you can turn your idea into a viable startup—even without a technical background.</p>
+           <a href="https://techgadgetnestsr.blogspot.com/2025/04/top-5-tech-gadgets-2025.html" class="btn" target="_blank"> Read More </a>
+        </div>
+    </div>
+
+      <div class="box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFsLg-64aL08UPt1vemps1diEPb_OVzZDVPBz7XOz35O-4wHffV_NC5jffyudxtySXY6IcRC1c0DLC8MHafZJIcQFPtVDtTfQ2x_2B_GXwXdGf7XdTy-PRjuhAXnmSgIXS9ayNmAk6r1zNKJdIqUOS5fMSd_lC7SJ_KUxy8KiVXegXK5tFaUv15fnhck8/w640-h426/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="">
+        <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fa fa-user"> By Surjeet </i></a>
+                <a href="#"> <i class="fa fa-calendar"> 25-May-2025 </i></a>
+            </div>
+            <h3>How AI Agents Are Reshaping Productivity in 2025</h3>
+            <p>In 2025, AI agents have evolved from simple task executors to sophisticated collaborators, fundamentally transforming how we work. These autonomous systems are not just tools; they're becoming integral team members, enhancing efficiency and enabling human workers to focus on strategic and creative tasks.</p>
+            <a href="https://techgadgetnestsr.blogspot.com/2025/04/how-ai-agents-are-reshaping.html" class="btn" target="_blank"> Read More </a>
+        </div>
+    </div>
+</div>
+
+</section>
+
+ <!-- Blog section End -->
+    
+
+ <!-- Footer Section start -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> Little Treasures <i class="fa fa-shopping-basket"></i> </h3>
+            <p>Feel Free To Follow Us On Social Media, All Links Are Given Below</p>
+            <div class="share">
+                <a href="https://www.facebook.com/share/16QefMGw5L/" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/surjeetsr_?igsh=aXNobXU5dDMxbzBn" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/surjeet-singh-2674b1106/" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+          <div class="box">
+            <h3> Contact Info </h3>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 7615870748 </a>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 1234567890 </a>
+            <a href="#" class="links"> <i class="fa fa-envelope"></i> surjeetsingh12362@gmail.com </a>
+            <a href="#" class="links"> <i class="fa fa-map-marker"></i> Uttar Pradesh ,India-201301 </a>
+            
+        </div>
+
+          <div class="box">
+            <h3> Quick Links </h3>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Home  </a>
+             <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Features </a>
+              <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Products  </a>
+               <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Catagories </a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Review </a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Blogs  </a>
+        </div>
+
+         <div class="box">
+            <h3> NewsLetters </h3>
+            <p> Subscribe For Latest Updates </p>
+            <input type="email" placeholder="Enter Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="Image/payment.png" class="payment-img" alt="">
+        </div>
+
+
+    </div>
+
+    <div class="credit"> Created By <span> Surjeet Singh </span>| All Rights Reserved</div>
+    
+</section>
+
+<!-- Footer Section start -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Js/script.js"></script>
+</body>
+</html>
