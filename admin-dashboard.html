@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Little Treasures</title>
+  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- <video autoplay muted loop id="bg-video">
+  <source src="Videos/bgv.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video> -->
+
+<Header class="Header">
+  <a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Little Treasures</a>
+  <nav class="navbar">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#products">Products</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="index.html#review">Review</a>
+    <a href="index.html#blogs">Blogs</a>
+    <a href="admin-login.html">Admin Login</a>
+  </nav>
+  <div class="Icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div class="fa fa-shopping-cart" id="cart-btn"></div>
+    <div class="fa fa-user" id="login-btn"></div>
+  </div>
+  <form class="search-form">
+    <input type="search" id="search-box" placeholder="Search Here....">
+    <label for="search-box" class="fa fa-search"></label>
+  </form>
+  <div class="shopping-cart"></div>
+  <form action="#" class="login-form">
+    <h3>Login Now</h3>
+    <input type="email" placeholder="Enter Your Email" class="box">
+    <input type="password" placeholder="Enter Your password" class="box">
+    <p>Forgot Your Password <a href="#"> Click Here </a></p>
+    <p>Don't Have An Account  <a href="#"> Create Now </a></p>
+    <input type="submit" value="Login Now" class="btn">
+  </form>
+</Header>
+
+
+
+  <div class="admin-container">
+    <h2>Add New Product</h2>
+    <input type="text" id="name" placeholder="Product Name" />
+    <input type="text" id="price" placeholder="Price" />
+    <input type="text" id="image" placeholder="Image URL" />
+    <textarea id="description" placeholder="Description"></textarea>
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+
+  <div id="productList" class="admin-container" style="margin-top: 4rem;"></div>
+
+  <script>
+    if (localStorage.getItem("isAdmin") !== "true") {
+      window.location.href = "admin-login.html";
+    }
+
+    function addProduct() {
+      const name = document.getElementById('name').value;
+      const price = document.getElementById('price').value;
+      const image = document.getElementById('image').value;
+      const description = document.getElementById('description').value;
+
+      if (!name || !price || !image) {
+        alert("Please fill all fields");
+        return;
+      }
+
+      const newProduct = { name, price, image, description };
+      let products = JSON.parse(localStorage.getItem("products")) || [];
+      products.push(newProduct);
+      localStorage.setItem("products", JSON.stringify(products));
+
+      renderProducts();
+      alert("Product added successfully!");
+    }
+
+    function renderProducts() {
+      const list = document.getElementById("productList");
+      const products = JSON.parse(localStorage.getItem("products")) || [];
+      list.innerHTML = "<h2>Product List</h2>";
+
+      products.forEach(p => {
+        list.innerHTML += `
+          <div class="product-item">
+            <h3>${p.name}</h3>
+            <p><strong>Price:</strong> ₹${p.price}</p>
+            <img src="${p.image}" alt="${p.name}" style="max-width:100px; margin-bottom:10px;" />
+            <p>${p.description}</p>
+          </div>
+        `;
+      });
+    }
+
+    window.onload = renderProducts;
+  </script>
+
+</body>
+</html>
